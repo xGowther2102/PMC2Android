@@ -1,0 +1,1512 @@
+{
+  "title": "Midnight Club II (PC)",
+  "title_id": "0x54540008",
+  "type": "retail",
+  "build_date": "2003-06-19 00:00:00 UTC",
+  "xdk_version": 0,
+  "build_path": "C:\\Program Files\\Midnight Club II\\mc2.exe",
+  "base_address": "0x00400000",
+  "image_size": 5756016,
+  "entry_point": "0x0061958A",
+  "kernel_thunk_addr": "0x0062D000",
+  "sections": [
+    {
+      "name": ".text",
+      "virtual_addr": "0x00401000",
+      "virtual_size": 2277376,
+      "raw_addr": "0x00001000",
+      "raw_size": 2277376,
+      "flags": "PRE, X",
+      "writable": false,
+      "executable": true
+    },
+    {
+      "name": ".rdata",
+      "virtual_addr": "0x0062D000",
+      "virtual_size": 214382,
+      "raw_addr": "0x0022D000",
+      "raw_size": 217088,
+      "flags": "W, PRE",
+      "writable": true,
+      "executable": false
+    },
+    {
+      "name": ".data",
+      "virtual_addr": "0x00662000",
+      "virtual_size": 2149848,
+      "raw_addr": "0x00262000",
+      "raw_size": 102400,
+      "flags": "W, PRE",
+      "writable": true,
+      "executable": false
+    },
+    {
+      "name": ".tls",
+      "virtual_addr": "0x0086F000",
+      "virtual_size": 9,
+      "raw_addr": "0x0027B000",
+      "raw_size": 4096,
+      "flags": "W, PRE",
+      "writable": true,
+      "executable": false
+    },
+    {
+      "name": ".grxdd",
+      "virtual_addr": "0x00870000",
+      "virtual_size": 548864,
+      "raw_addr": "0x0027C000",
+      "raw_size": 548864,
+      "flags": "W, PRE",
+      "writable": true,
+      "executable": false
+    },
+    {
+      "name": ".ashrmg",
+      "virtual_addr": "0x008F6000",
+      "virtual_size": 538310,
+      "raw_addr": "0x00302000",
+      "raw_size": 540672,
+      "flags": "W, PRE",
+      "writable": true,
+      "executable": false
+    },
+    {
+      "name": ".idata",
+      "virtual_addr": "0x0097A000",
+      "virtual_size": 6800,
+      "raw_addr": "0x00386000",
+      "raw_size": 8192,
+      "flags": "W, PRE",
+      "writable": true,
+      "executable": false
+    },
+    {
+      "name": ".rsrc",
+      "virtual_addr": "0x0097C000",
+      "virtual_size": 5232,
+      "raw_addr": "0x00388000",
+      "raw_size": 8192,
+      "flags": "PRE",
+      "writable": false,
+      "executable": false
+    }
+  ],
+  "libraries": [],
+  "kernel_imports": [
+    {
+      "ordinal": 1191,
+      "name": "advapi32__RegOpenKeyExA",
+      "dll": "advapi32.dll",
+      "func": "RegOpenKeyExA",
+      "thunk_addr": "0x0062D000"
+    },
+    {
+      "ordinal": 1192,
+      "name": "advapi32__RegCloseKey",
+      "dll": "advapi32.dll",
+      "func": "RegCloseKey",
+      "thunk_addr": "0x0062D004"
+    },
+    {
+      "ordinal": 1193,
+      "name": "advapi32__RegSetValueExA",
+      "dll": "advapi32.dll",
+      "func": "RegSetValueExA",
+      "thunk_addr": "0x0062D008"
+    },
+    {
+      "ordinal": 1194,
+      "name": "advapi32__RegCreateKeyExA",
+      "dll": "advapi32.dll",
+      "func": "RegCreateKeyExA",
+      "thunk_addr": "0x0062D00C"
+    },
+    {
+      "ordinal": 1195,
+      "name": "advapi32__RegQueryValueExA",
+      "dll": "advapi32.dll",
+      "func": "RegQueryValueExA",
+      "thunk_addr": "0x0062D010"
+    },
+    {
+      "ordinal": 1076,
+      "name": "dinput8__DirectInput8Create",
+      "dll": "dinput8.dll",
+      "func": "DirectInput8Create",
+      "thunk_addr": "0x0062D018"
+    },
+    {
+      "ordinal": 1189,
+      "name": "gdi32__GetDeviceCaps",
+      "dll": "gdi32.dll",
+      "func": "GetDeviceCaps",
+      "thunk_addr": "0x0062D020"
+    },
+    {
+      "ordinal": 1190,
+      "name": "gdi32__CreateSolidBrush",
+      "dll": "gdi32.dll",
+      "func": "CreateSolidBrush",
+      "thunk_addr": "0x0062D024"
+    },
+    {
+      "ordinal": 1078,
+      "name": "kernel32__LCMapStringA",
+      "dll": "kernel32.dll",
+      "func": "LCMapStringA",
+      "thunk_addr": "0x0062D02C"
+    },
+    {
+      "ordinal": 1079,
+      "name": "kernel32__HeapSize",
+      "dll": "kernel32.dll",
+      "func": "HeapSize",
+      "thunk_addr": "0x0062D030"
+    },
+    {
+      "ordinal": 1080,
+      "name": "kernel32__HeapReAlloc",
+      "dll": "kernel32.dll",
+      "func": "HeapReAlloc",
+      "thunk_addr": "0x0062D034"
+    },
+    {
+      "ordinal": 1081,
+      "name": "kernel32__SetUnhandledExceptionFilter",
+      "dll": "kernel32.dll",
+      "func": "SetUnhandledExceptionFilter",
+      "thunk_addr": "0x0062D038"
+    },
+    {
+      "ordinal": 1082,
+      "name": "kernel32__HeapFree",
+      "dll": "kernel32.dll",
+      "func": "HeapFree",
+      "thunk_addr": "0x0062D03C"
+    },
+    {
+      "ordinal": 1083,
+      "name": "kernel32__HeapCreate",
+      "dll": "kernel32.dll",
+      "func": "HeapCreate",
+      "thunk_addr": "0x0062D040"
+    },
+    {
+      "ordinal": 1084,
+      "name": "kernel32__HeapDestroy",
+      "dll": "kernel32.dll",
+      "func": "HeapDestroy",
+      "thunk_addr": "0x0062D044"
+    },
+    {
+      "ordinal": 1085,
+      "name": "kernel32__GetFileType",
+      "dll": "kernel32.dll",
+      "func": "GetFileType",
+      "thunk_addr": "0x0062D048"
+    },
+    {
+      "ordinal": 1086,
+      "name": "kernel32__SetHandleCount",
+      "dll": "kernel32.dll",
+      "func": "SetHandleCount",
+      "thunk_addr": "0x0062D04C"
+    },
+    {
+      "ordinal": 1087,
+      "name": "kernel32__GetEnvironmentStringsW",
+      "dll": "kernel32.dll",
+      "func": "GetEnvironmentStringsW",
+      "thunk_addr": "0x0062D050"
+    },
+    {
+      "ordinal": 1088,
+      "name": "kernel32__WideCharToMultiByte",
+      "dll": "kernel32.dll",
+      "func": "WideCharToMultiByte",
+      "thunk_addr": "0x0062D054"
+    },
+    {
+      "ordinal": 1089,
+      "name": "kernel32__MultiByteToWideChar",
+      "dll": "kernel32.dll",
+      "func": "MultiByteToWideChar",
+      "thunk_addr": "0x0062D058"
+    },
+    {
+      "ordinal": 1090,
+      "name": "kernel32__GetEnvironmentStrings",
+      "dll": "kernel32.dll",
+      "func": "GetEnvironmentStrings",
+      "thunk_addr": "0x0062D05C"
+    },
+    {
+      "ordinal": 1091,
+      "name": "kernel32__FreeEnvironmentStringsA",
+      "dll": "kernel32.dll",
+      "func": "FreeEnvironmentStringsA",
+      "thunk_addr": "0x0062D060"
+    },
+    {
+      "ordinal": 1092,
+      "name": "kernel32__UnhandledExceptionFilter",
+      "dll": "kernel32.dll",
+      "func": "UnhandledExceptionFilter",
+      "thunk_addr": "0x0062D064"
+    },
+    {
+      "ordinal": 1093,
+      "name": "kernel32__HeapAlloc",
+      "dll": "kernel32.dll",
+      "func": "HeapAlloc",
+      "thunk_addr": "0x0062D068"
+    },
+    {
+      "ordinal": 1094,
+      "name": "kernel32__GetCPInfo",
+      "dll": "kernel32.dll",
+      "func": "GetCPInfo",
+      "thunk_addr": "0x0062D06C"
+    },
+    {
+      "ordinal": 1095,
+      "name": "kernel32__GetOEMCP",
+      "dll": "kernel32.dll",
+      "func": "GetOEMCP",
+      "thunk_addr": "0x0062D070"
+    },
+    {
+      "ordinal": 1096,
+      "name": "kernel32__VirtualQuery",
+      "dll": "kernel32.dll",
+      "func": "VirtualQuery",
+      "thunk_addr": "0x0062D074"
+    },
+    {
+      "ordinal": 1097,
+      "name": "kernel32__FlushFileBuffers",
+      "dll": "kernel32.dll",
+      "func": "FlushFileBuffers",
+      "thunk_addr": "0x0062D078"
+    },
+    {
+      "ordinal": 1098,
+      "name": "kernel32__GetStringTypeA",
+      "dll": "kernel32.dll",
+      "func": "GetStringTypeA",
+      "thunk_addr": "0x0062D07C"
+    },
+    {
+      "ordinal": 1099,
+      "name": "kernel32__GetStringTypeW",
+      "dll": "kernel32.dll",
+      "func": "GetStringTypeW",
+      "thunk_addr": "0x0062D080"
+    },
+    {
+      "ordinal": 1100,
+      "name": "kernel32__IsBadWritePtr",
+      "dll": "kernel32.dll",
+      "func": "IsBadWritePtr",
+      "thunk_addr": "0x0062D084"
+    },
+    {
+      "ordinal": 1101,
+      "name": "kernel32__LCMapStringW",
+      "dll": "kernel32.dll",
+      "func": "LCMapStringW",
+      "thunk_addr": "0x0062D088"
+    },
+    {
+      "ordinal": 1102,
+      "name": "kernel32__FreeEnvironmentStringsW",
+      "dll": "kernel32.dll",
+      "func": "FreeEnvironmentStringsW",
+      "thunk_addr": "0x0062D08C"
+    },
+    {
+      "ordinal": 1103,
+      "name": "kernel32__VirtualProtect",
+      "dll": "kernel32.dll",
+      "func": "VirtualProtect",
+      "thunk_addr": "0x0062D090"
+    },
+    {
+      "ordinal": 1104,
+      "name": "kernel32__GetACP",
+      "dll": "kernel32.dll",
+      "func": "GetACP",
+      "thunk_addr": "0x0062D094"
+    },
+    {
+      "ordinal": 1105,
+      "name": "kernel32__GetSystemTimeAsFileTime",
+      "dll": "kernel32.dll",
+      "func": "GetSystemTimeAsFileTime",
+      "thunk_addr": "0x0062D098"
+    },
+    {
+      "ordinal": 1106,
+      "name": "kernel32__RaiseException",
+      "dll": "kernel32.dll",
+      "func": "RaiseException",
+      "thunk_addr": "0x0062D09C"
+    },
+    {
+      "ordinal": 1107,
+      "name": "kernel32__RtlUnwind",
+      "dll": "kernel32.dll",
+      "func": "RtlUnwind",
+      "thunk_addr": "0x0062D0A0"
+    },
+    {
+      "ordinal": 1108,
+      "name": "kernel32__LoadLibraryA",
+      "dll": "kernel32.dll",
+      "func": "LoadLibraryA",
+      "thunk_addr": "0x0062D0A4"
+    },
+    {
+      "ordinal": 1109,
+      "name": "kernel32__GetCommandLineA",
+      "dll": "kernel32.dll",
+      "func": "GetCommandLineA",
+      "thunk_addr": "0x0062D0A8"
+    },
+    {
+      "ordinal": 1110,
+      "name": "kernel32__GetStartupInfoA",
+      "dll": "kernel32.dll",
+      "func": "GetStartupInfoA",
+      "thunk_addr": "0x0062D0AC"
+    },
+    {
+      "ordinal": 1111,
+      "name": "kernel32__TerminateProcess",
+      "dll": "kernel32.dll",
+      "func": "TerminateProcess",
+      "thunk_addr": "0x0062D0B0"
+    },
+    {
+      "ordinal": 1112,
+      "name": "kernel32__GetProcAddress",
+      "dll": "kernel32.dll",
+      "func": "GetProcAddress",
+      "thunk_addr": "0x0062D0B4"
+    },
+    {
+      "ordinal": 1113,
+      "name": "kernel32__ExitProcess",
+      "dll": "kernel32.dll",
+      "func": "ExitProcess",
+      "thunk_addr": "0x0062D0B8"
+    },
+    {
+      "ordinal": 1114,
+      "name": "kernel32__WriteFile",
+      "dll": "kernel32.dll",
+      "func": "WriteFile",
+      "thunk_addr": "0x0062D0BC"
+    },
+    {
+      "ordinal": 1115,
+      "name": "kernel32__SetFilePointer",
+      "dll": "kernel32.dll",
+      "func": "SetFilePointer",
+      "thunk_addr": "0x0062D0C0"
+    },
+    {
+      "ordinal": 1116,
+      "name": "kernel32__DebugBreak",
+      "dll": "kernel32.dll",
+      "func": "DebugBreak",
+      "thunk_addr": "0x0062D0C4"
+    },
+    {
+      "ordinal": 1117,
+      "name": "kernel32__SetConsoleTextAttribute",
+      "dll": "kernel32.dll",
+      "func": "SetConsoleTextAttribute",
+      "thunk_addr": "0x0062D0C8"
+    },
+    {
+      "ordinal": 1118,
+      "name": "kernel32__GetStdHandle",
+      "dll": "kernel32.dll",
+      "func": "GetStdHandle",
+      "thunk_addr": "0x0062D0CC"
+    },
+    {
+      "ordinal": 1119,
+      "name": "kernel32__GlobalAlloc",
+      "dll": "kernel32.dll",
+      "func": "GlobalAlloc",
+      "thunk_addr": "0x0062D0D0"
+    },
+    {
+      "ordinal": 1120,
+      "name": "kernel32__GetOverlappedResult",
+      "dll": "kernel32.dll",
+      "func": "GetOverlappedResult",
+      "thunk_addr": "0x0062D0D4"
+    },
+    {
+      "ordinal": 1121,
+      "name": "kernel32__ReadFile",
+      "dll": "kernel32.dll",
+      "func": "ReadFile",
+      "thunk_addr": "0x0062D0D8"
+    },
+    {
+      "ordinal": 1122,
+      "name": "kernel32__GetLogicalDrives",
+      "dll": "kernel32.dll",
+      "func": "GetLogicalDrives",
+      "thunk_addr": "0x0062D0DC"
+    },
+    {
+      "ordinal": 1123,
+      "name": "kernel32__SetEndOfFile",
+      "dll": "kernel32.dll",
+      "func": "SetEndOfFile",
+      "thunk_addr": "0x0062D0E0"
+    },
+    {
+      "ordinal": 1124,
+      "name": "kernel32__SetStdHandle",
+      "dll": "kernel32.dll",
+      "func": "SetStdHandle",
+      "thunk_addr": "0x0062D0E4"
+    },
+    {
+      "ordinal": 1125,
+      "name": "kernel32__SetEnvironmentVariableA",
+      "dll": "kernel32.dll",
+      "func": "SetEnvironmentVariableA",
+      "thunk_addr": "0x0062D0E8"
+    },
+    {
+      "ordinal": 1126,
+      "name": "kernel32__CompareStringW",
+      "dll": "kernel32.dll",
+      "func": "CompareStringW",
+      "thunk_addr": "0x0062D0EC"
+    },
+    {
+      "ordinal": 1127,
+      "name": "kernel32__CompareStringA",
+      "dll": "kernel32.dll",
+      "func": "CompareStringA",
+      "thunk_addr": "0x0062D0F0"
+    },
+    {
+      "ordinal": 1128,
+      "name": "kernel32__GetCurrentProcessId",
+      "dll": "kernel32.dll",
+      "func": "GetCurrentProcessId",
+      "thunk_addr": "0x0062D0F4"
+    },
+    {
+      "ordinal": 1129,
+      "name": "kernel32__GetCurrentThreadId",
+      "dll": "kernel32.dll",
+      "func": "GetCurrentThreadId",
+      "thunk_addr": "0x0062D0F8"
+    },
+    {
+      "ordinal": 1130,
+      "name": "kernel32__GetLocaleInfoA",
+      "dll": "kernel32.dll",
+      "func": "GetLocaleInfoA",
+      "thunk_addr": "0x0062D0FC"
+    },
+    {
+      "ordinal": 1131,
+      "name": "kernel32__IsBadCodePtr",
+      "dll": "kernel32.dll",
+      "func": "IsBadCodePtr",
+      "thunk_addr": "0x0062D100"
+    },
+    {
+      "ordinal": 1132,
+      "name": "kernel32__GetVersionExA",
+      "dll": "kernel32.dll",
+      "func": "GetVersionExA",
+      "thunk_addr": "0x0062D104"
+    },
+    {
+      "ordinal": 1133,
+      "name": "kernel32__GetModuleFileNameA",
+      "dll": "kernel32.dll",
+      "func": "GetModuleFileNameA",
+      "thunk_addr": "0x0062D108"
+    },
+    {
+      "ordinal": 1134,
+      "name": "kernel32__GetDriveTypeA",
+      "dll": "kernel32.dll",
+      "func": "GetDriveTypeA",
+      "thunk_addr": "0x0062D10C"
+    },
+    {
+      "ordinal": 1135,
+      "name": "kernel32__QueryPerformanceFrequency",
+      "dll": "kernel32.dll",
+      "func": "QueryPerformanceFrequency",
+      "thunk_addr": "0x0062D110"
+    },
+    {
+      "ordinal": 1136,
+      "name": "kernel32__GetVersion",
+      "dll": "kernel32.dll",
+      "func": "GetVersion",
+      "thunk_addr": "0x0062D114"
+    },
+    {
+      "ordinal": 1137,
+      "name": "kernel32__GetTickCount",
+      "dll": "kernel32.dll",
+      "func": "GetTickCount",
+      "thunk_addr": "0x0062D118"
+    },
+    {
+      "ordinal": 1138,
+      "name": "kernel32__Sleep",
+      "dll": "kernel32.dll",
+      "func": "Sleep",
+      "thunk_addr": "0x0062D11C"
+    },
+    {
+      "ordinal": 1139,
+      "name": "kernel32__QueryPerformanceCounter",
+      "dll": "kernel32.dll",
+      "func": "QueryPerformanceCounter",
+      "thunk_addr": "0x0062D120"
+    },
+    {
+      "ordinal": 1140,
+      "name": "kernel32__VirtualAlloc",
+      "dll": "kernel32.dll",
+      "func": "VirtualAlloc",
+      "thunk_addr": "0x0062D124"
+    },
+    {
+      "ordinal": 1141,
+      "name": "kernel32__VirtualFree",
+      "dll": "kernel32.dll",
+      "func": "VirtualFree",
+      "thunk_addr": "0x0062D128"
+    },
+    {
+      "ordinal": 1142,
+      "name": "kernel32__GetSystemInfo",
+      "dll": "kernel32.dll",
+      "func": "GetSystemInfo",
+      "thunk_addr": "0x0062D12C"
+    },
+    {
+      "ordinal": 1143,
+      "name": "kernel32__ResumeThread",
+      "dll": "kernel32.dll",
+      "func": "ResumeThread",
+      "thunk_addr": "0x0062D130"
+    },
+    {
+      "ordinal": 1144,
+      "name": "kernel32__SetThreadPriority",
+      "dll": "kernel32.dll",
+      "func": "SetThreadPriority",
+      "thunk_addr": "0x0062D134"
+    },
+    {
+      "ordinal": 1145,
+      "name": "kernel32__GetThreadPriority",
+      "dll": "kernel32.dll",
+      "func": "GetThreadPriority",
+      "thunk_addr": "0x0062D138"
+    },
+    {
+      "ordinal": 1146,
+      "name": "kernel32__GetCurrentThread",
+      "dll": "kernel32.dll",
+      "func": "GetCurrentThread",
+      "thunk_addr": "0x0062D13C"
+    },
+    {
+      "ordinal": 1147,
+      "name": "kernel32__GetLastError",
+      "dll": "kernel32.dll",
+      "func": "GetLastError",
+      "thunk_addr": "0x0062D140"
+    },
+    {
+      "ordinal": 1148,
+      "name": "kernel32__CreateThread",
+      "dll": "kernel32.dll",
+      "func": "CreateThread",
+      "thunk_addr": "0x0062D144"
+    },
+    {
+      "ordinal": 1149,
+      "name": "kernel32__GetModuleHandleA",
+      "dll": "kernel32.dll",
+      "func": "GetModuleHandleA",
+      "thunk_addr": "0x0062D148"
+    },
+    {
+      "ordinal": 1150,
+      "name": "kernel32__CloseHandle",
+      "dll": "kernel32.dll",
+      "func": "CloseHandle",
+      "thunk_addr": "0x0062D14C"
+    },
+    {
+      "ordinal": 1151,
+      "name": "kernel32__CreateFileA",
+      "dll": "kernel32.dll",
+      "func": "CreateFileA",
+      "thunk_addr": "0x0062D150"
+    },
+    {
+      "ordinal": 1152,
+      "name": "kernel32__FindClose",
+      "dll": "kernel32.dll",
+      "func": "FindClose",
+      "thunk_addr": "0x0062D154"
+    },
+    {
+      "ordinal": 1153,
+      "name": "kernel32__FindNextFileA",
+      "dll": "kernel32.dll",
+      "func": "FindNextFileA",
+      "thunk_addr": "0x0062D158"
+    },
+    {
+      "ordinal": 1154,
+      "name": "kernel32__FindFirstFileA",
+      "dll": "kernel32.dll",
+      "func": "FindFirstFileA",
+      "thunk_addr": "0x0062D15C"
+    },
+    {
+      "ordinal": 1155,
+      "name": "kernel32__OutputDebugStringA",
+      "dll": "kernel32.dll",
+      "func": "OutputDebugStringA",
+      "thunk_addr": "0x0062D160"
+    },
+    {
+      "ordinal": 1156,
+      "name": "kernel32__GetCurrentProcess",
+      "dll": "kernel32.dll",
+      "func": "GetCurrentProcess",
+      "thunk_addr": "0x0062D164"
+    },
+    {
+      "ordinal": 1157,
+      "name": "kernel32__IsBadReadPtr",
+      "dll": "kernel32.dll",
+      "func": "IsBadReadPtr",
+      "thunk_addr": "0x0062D168"
+    },
+    {
+      "ordinal": 1158,
+      "name": "user32__SetFocus",
+      "dll": "user32.dll",
+      "func": "SetFocus",
+      "thunk_addr": "0x0062D170"
+    },
+    {
+      "ordinal": 1159,
+      "name": "user32__UpdateWindow",
+      "dll": "user32.dll",
+      "func": "UpdateWindow",
+      "thunk_addr": "0x0062D174"
+    },
+    {
+      "ordinal": 1160,
+      "name": "user32__ShowWindow",
+      "dll": "user32.dll",
+      "func": "ShowWindow",
+      "thunk_addr": "0x0062D178"
+    },
+    {
+      "ordinal": 1161,
+      "name": "user32__GetClientRect",
+      "dll": "user32.dll",
+      "func": "GetClientRect",
+      "thunk_addr": "0x0062D17C"
+    },
+    {
+      "ordinal": 1162,
+      "name": "user32__MessageBoxA",
+      "dll": "user32.dll",
+      "func": "MessageBoxA",
+      "thunk_addr": "0x0062D180"
+    },
+    {
+      "ordinal": 1163,
+      "name": "user32__GetWindowRect",
+      "dll": "user32.dll",
+      "func": "GetWindowRect",
+      "thunk_addr": "0x0062D184"
+    },
+    {
+      "ordinal": 1164,
+      "name": "user32__GetWindowLongA",
+      "dll": "user32.dll",
+      "func": "GetWindowLongA",
+      "thunk_addr": "0x0062D188"
+    },
+    {
+      "ordinal": 1165,
+      "name": "user32__CreateWindowExA",
+      "dll": "user32.dll",
+      "func": "CreateWindowExA",
+      "thunk_addr": "0x0062D18C"
+    },
+    {
+      "ordinal": 1166,
+      "name": "user32__AdjustWindowRect",
+      "dll": "user32.dll",
+      "func": "AdjustWindowRect",
+      "thunk_addr": "0x0062D190"
+    },
+    {
+      "ordinal": 1167,
+      "name": "user32__SetRect",
+      "dll": "user32.dll",
+      "func": "SetRect",
+      "thunk_addr": "0x0062D194"
+    },
+    {
+      "ordinal": 1168,
+      "name": "user32__ReleaseDC",
+      "dll": "user32.dll",
+      "func": "ReleaseDC",
+      "thunk_addr": "0x0062D198"
+    },
+    {
+      "ordinal": 1169,
+      "name": "user32__GetDC",
+      "dll": "user32.dll",
+      "func": "GetDC",
+      "thunk_addr": "0x0062D19C"
+    },
+    {
+      "ordinal": 1170,
+      "name": "user32__RegisterClassA",
+      "dll": "user32.dll",
+      "func": "RegisterClassA",
+      "thunk_addr": "0x0062D1A0"
+    },
+    {
+      "ordinal": 1171,
+      "name": "user32__LoadCursorA",
+      "dll": "user32.dll",
+      "func": "LoadCursorA",
+      "thunk_addr": "0x0062D1A4"
+    },
+    {
+      "ordinal": 1172,
+      "name": "user32__LoadIconA",
+      "dll": "user32.dll",
+      "func": "LoadIconA",
+      "thunk_addr": "0x0062D1A8"
+    },
+    {
+      "ordinal": 1173,
+      "name": "user32__GetSystemMetrics",
+      "dll": "user32.dll",
+      "func": "GetSystemMetrics",
+      "thunk_addr": "0x0062D1AC"
+    },
+    {
+      "ordinal": 1174,
+      "name": "user32__GetMessageA",
+      "dll": "user32.dll",
+      "func": "GetMessageA",
+      "thunk_addr": "0x0062D1B0"
+    },
+    {
+      "ordinal": 1175,
+      "name": "user32__PeekMessageA",
+      "dll": "user32.dll",
+      "func": "PeekMessageA",
+      "thunk_addr": "0x0062D1B4"
+    },
+    {
+      "ordinal": 1176,
+      "name": "user32__DispatchMessageA",
+      "dll": "user32.dll",
+      "func": "DispatchMessageA",
+      "thunk_addr": "0x0062D1B8"
+    },
+    {
+      "ordinal": 1177,
+      "name": "user32__TranslateMessage",
+      "dll": "user32.dll",
+      "func": "TranslateMessage",
+      "thunk_addr": "0x0062D1BC"
+    },
+    {
+      "ordinal": 1178,
+      "name": "user32__SetWindowTextA",
+      "dll": "user32.dll",
+      "func": "SetWindowTextA",
+      "thunk_addr": "0x0062D1C0"
+    },
+    {
+      "ordinal": 1179,
+      "name": "user32__MapWindowPoints",
+      "dll": "user32.dll",
+      "func": "MapWindowPoints",
+      "thunk_addr": "0x0062D1C4"
+    },
+    {
+      "ordinal": 1180,
+      "name": "user32__GetDesktopWindow",
+      "dll": "user32.dll",
+      "func": "GetDesktopWindow",
+      "thunk_addr": "0x0062D1C8"
+    },
+    {
+      "ordinal": 1181,
+      "name": "user32__ShowCursor",
+      "dll": "user32.dll",
+      "func": "ShowCursor",
+      "thunk_addr": "0x0062D1CC"
+    },
+    {
+      "ordinal": 1182,
+      "name": "user32__DestroyWindow",
+      "dll": "user32.dll",
+      "func": "DestroyWindow",
+      "thunk_addr": "0x0062D1D0"
+    },
+    {
+      "ordinal": 1183,
+      "name": "user32__wvsprintfA",
+      "dll": "user32.dll",
+      "func": "wvsprintfA",
+      "thunk_addr": "0x0062D1D4"
+    },
+    {
+      "ordinal": 1184,
+      "name": "user32__GetParent",
+      "dll": "user32.dll",
+      "func": "GetParent",
+      "thunk_addr": "0x0062D1D8"
+    },
+    {
+      "ordinal": 1185,
+      "name": "user32__SetCapture",
+      "dll": "user32.dll",
+      "func": "SetCapture",
+      "thunk_addr": "0x0062D1DC"
+    },
+    {
+      "ordinal": 1186,
+      "name": "user32__ReleaseCapture",
+      "dll": "user32.dll",
+      "func": "ReleaseCapture",
+      "thunk_addr": "0x0062D1E0"
+    },
+    {
+      "ordinal": 1187,
+      "name": "user32__SendMessageA",
+      "dll": "user32.dll",
+      "func": "SendMessageA",
+      "thunk_addr": "0x0062D1E4"
+    },
+    {
+      "ordinal": 1188,
+      "name": "user32__DefWindowProcA",
+      "dll": "user32.dll",
+      "func": "DefWindowProcA",
+      "thunk_addr": "0x0062D1E8"
+    },
+    {
+      "ordinal": 1077,
+      "name": "winmm__timeGetTime",
+      "dll": "winmm.dll",
+      "func": "timeGetTime",
+      "thunk_addr": "0x0062D1F0"
+    },
+    {
+      "ordinal": 1000,
+      "name": "wsock32__inet_ntoa",
+      "dll": "wsock32.dll",
+      "func": "inet_ntoa",
+      "thunk_addr": "0x0062D1F8"
+    },
+    {
+      "ordinal": 1001,
+      "name": "wsock32__gethostname",
+      "dll": "wsock32.dll",
+      "func": "gethostname",
+      "thunk_addr": "0x0062D1FC"
+    },
+    {
+      "ordinal": 1002,
+      "name": "wsock32__gethostbyname",
+      "dll": "wsock32.dll",
+      "func": "gethostbyname",
+      "thunk_addr": "0x0062D200"
+    },
+    {
+      "ordinal": 1003,
+      "name": "wsock32__WSACleanup",
+      "dll": "wsock32.dll",
+      "func": "WSACleanup",
+      "thunk_addr": "0x0062D204"
+    },
+    {
+      "ordinal": 1004,
+      "name": "wsock32__WSAStartup",
+      "dll": "wsock32.dll",
+      "func": "WSAStartup",
+      "thunk_addr": "0x0062D208"
+    },
+    {
+      "ordinal": 1005,
+      "name": "wsock32__getsockname",
+      "dll": "wsock32.dll",
+      "func": "getsockname",
+      "thunk_addr": "0x0062D20C"
+    },
+    {
+      "ordinal": 1006,
+      "name": "wsock32__htonl",
+      "dll": "wsock32.dll",
+      "func": "htonl",
+      "thunk_addr": "0x0062D210"
+    },
+    {
+      "ordinal": 1007,
+      "name": "wsock32__ntohs",
+      "dll": "wsock32.dll",
+      "func": "ntohs",
+      "thunk_addr": "0x0062D214"
+    },
+    {
+      "ordinal": 1008,
+      "name": "wsock32__recvfrom",
+      "dll": "wsock32.dll",
+      "func": "recvfrom",
+      "thunk_addr": "0x0062D218"
+    },
+    {
+      "ordinal": 1009,
+      "name": "wsock32__bind",
+      "dll": "wsock32.dll",
+      "func": "bind",
+      "thunk_addr": "0x0062D21C"
+    },
+    {
+      "ordinal": 1010,
+      "name": "wsock32__sendto",
+      "dll": "wsock32.dll",
+      "func": "sendto",
+      "thunk_addr": "0x0062D220"
+    },
+    {
+      "ordinal": 1011,
+      "name": "wsock32__recv",
+      "dll": "wsock32.dll",
+      "func": "recv",
+      "thunk_addr": "0x0062D224"
+    },
+    {
+      "ordinal": 1012,
+      "name": "wsock32__WSAGetLastError",
+      "dll": "wsock32.dll",
+      "func": "WSAGetLastError",
+      "thunk_addr": "0x0062D228"
+    },
+    {
+      "ordinal": 1013,
+      "name": "wsock32__send",
+      "dll": "wsock32.dll",
+      "func": "send",
+      "thunk_addr": "0x0062D22C"
+    },
+    {
+      "ordinal": 1014,
+      "name": "wsock32__select",
+      "dll": "wsock32.dll",
+      "func": "select",
+      "thunk_addr": "0x0062D230"
+    },
+    {
+      "ordinal": 1015,
+      "name": "wsock32____WSAFDIsSet",
+      "dll": "wsock32.dll",
+      "func": "__WSAFDIsSet",
+      "thunk_addr": "0x0062D234"
+    },
+    {
+      "ordinal": 1016,
+      "name": "wsock32__shutdown",
+      "dll": "wsock32.dll",
+      "func": "shutdown",
+      "thunk_addr": "0x0062D238"
+    },
+    {
+      "ordinal": 1017,
+      "name": "wsock32__socket",
+      "dll": "wsock32.dll",
+      "func": "socket",
+      "thunk_addr": "0x0062D23C"
+    },
+    {
+      "ordinal": 1018,
+      "name": "wsock32__setsockopt",
+      "dll": "wsock32.dll",
+      "func": "setsockopt",
+      "thunk_addr": "0x0062D240"
+    },
+    {
+      "ordinal": 1019,
+      "name": "wsock32__connect",
+      "dll": "wsock32.dll",
+      "func": "connect",
+      "thunk_addr": "0x0062D244"
+    },
+    {
+      "ordinal": 1020,
+      "name": "wsock32__closesocket",
+      "dll": "wsock32.dll",
+      "func": "closesocket",
+      "thunk_addr": "0x0062D248"
+    },
+    {
+      "ordinal": 1021,
+      "name": "wsock32__ioctlsocket",
+      "dll": "wsock32.dll",
+      "func": "ioctlsocket",
+      "thunk_addr": "0x0062D24C"
+    },
+    {
+      "ordinal": 1022,
+      "name": "wsock32__htons",
+      "dll": "wsock32.dll",
+      "func": "htons",
+      "thunk_addr": "0x0062D250"
+    },
+    {
+      "ordinal": 1023,
+      "name": "wsock32__ntohl",
+      "dll": "wsock32.dll",
+      "func": "ntohl",
+      "thunk_addr": "0x0062D254"
+    },
+    {
+      "ordinal": 1024,
+      "name": "wsock32__inet_addr",
+      "dll": "wsock32.dll",
+      "func": "inet_addr",
+      "thunk_addr": "0x0062D258"
+    },
+    {
+      "ordinal": 1066,
+      "name": "binkw32___BinkNextFrame@4",
+      "dll": "binkw32.dll",
+      "func": "_BinkNextFrame@4",
+      "thunk_addr": "0x0062D260"
+    },
+    {
+      "ordinal": 1067,
+      "name": "binkw32___BinkCopyToBuffer@28",
+      "dll": "binkw32.dll",
+      "func": "_BinkCopyToBuffer@28",
+      "thunk_addr": "0x0062D264"
+    },
+    {
+      "ordinal": 1068,
+      "name": "binkw32___BinkOpenMiles@4",
+      "dll": "binkw32.dll",
+      "func": "_BinkOpenMiles@4",
+      "thunk_addr": "0x0062D268"
+    },
+    {
+      "ordinal": 1069,
+      "name": "binkw32___BinkSetSoundSystem@8",
+      "dll": "binkw32.dll",
+      "func": "_BinkSetSoundSystem@8",
+      "thunk_addr": "0x0062D26C"
+    },
+    {
+      "ordinal": 1070,
+      "name": "binkw32___BinkSetVolume@12",
+      "dll": "binkw32.dll",
+      "func": "_BinkSetVolume@12",
+      "thunk_addr": "0x0062D270"
+    },
+    {
+      "ordinal": 1071,
+      "name": "binkw32___BinkClose@4",
+      "dll": "binkw32.dll",
+      "func": "_BinkClose@4",
+      "thunk_addr": "0x0062D274"
+    },
+    {
+      "ordinal": 1072,
+      "name": "binkw32___BinkWait@4",
+      "dll": "binkw32.dll",
+      "func": "_BinkWait@4",
+      "thunk_addr": "0x0062D278"
+    },
+    {
+      "ordinal": 1073,
+      "name": "binkw32___BinkOpen@8",
+      "dll": "binkw32.dll",
+      "func": "_BinkOpen@8",
+      "thunk_addr": "0x0062D27C"
+    },
+    {
+      "ordinal": 1074,
+      "name": "binkw32___BinkDoFrame@4",
+      "dll": "binkw32.dll",
+      "func": "_BinkDoFrame@4",
+      "thunk_addr": "0x0062D280"
+    },
+    {
+      "ordinal": 1075,
+      "name": "d3d9__Direct3DCreate9",
+      "dll": "d3d9.dll",
+      "func": "Direct3DCreate9",
+      "thunk_addr": "0x0062D288"
+    },
+    {
+      "ordinal": 1025,
+      "name": "mss32___AIL_stream_status@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_stream_status@4",
+      "thunk_addr": "0x0062D290"
+    },
+    {
+      "ordinal": 1026,
+      "name": "mss32___AIL_open_stream@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_open_stream@12",
+      "thunk_addr": "0x0062D294"
+    },
+    {
+      "ordinal": 1027,
+      "name": "mss32___AIL_start_stream@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_start_stream@4",
+      "thunk_addr": "0x0062D298"
+    },
+    {
+      "ordinal": 1028,
+      "name": "mss32___AIL_pause_stream@8",
+      "dll": "mss32.dll",
+      "func": "_AIL_pause_stream@8",
+      "thunk_addr": "0x0062D29C"
+    },
+    {
+      "ordinal": 1029,
+      "name": "mss32___AIL_close_stream@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_close_stream@4",
+      "thunk_addr": "0x0062D2A0"
+    },
+    {
+      "ordinal": 1030,
+      "name": "mss32___AIL_set_stream_volume_pan@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_stream_volume_pan@12",
+      "thunk_addr": "0x0062D2A4"
+    },
+    {
+      "ordinal": 1031,
+      "name": "mss32___AIL_allocate_3D_sample_handle@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_allocate_3D_sample_handle@4",
+      "thunk_addr": "0x0062D2A8"
+    },
+    {
+      "ordinal": 1032,
+      "name": "mss32___AIL_set_3D_sample_info@8",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_3D_sample_info@8",
+      "thunk_addr": "0x0062D2AC"
+    },
+    {
+      "ordinal": 1033,
+      "name": "mss32___AIL_set_3D_sample_loop_block@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_3D_sample_loop_block@12",
+      "thunk_addr": "0x0062D2B0"
+    },
+    {
+      "ordinal": 1034,
+      "name": "mss32___AIL_set_3D_sample_loop_count@8",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_3D_sample_loop_count@8",
+      "thunk_addr": "0x0062D2B4"
+    },
+    {
+      "ordinal": 1035,
+      "name": "mss32___AIL_allocate_sample_handle@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_allocate_sample_handle@4",
+      "thunk_addr": "0x0062D2B8"
+    },
+    {
+      "ordinal": 1036,
+      "name": "mss32___AIL_init_sample@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_init_sample@4",
+      "thunk_addr": "0x0062D2BC"
+    },
+    {
+      "ordinal": 1037,
+      "name": "mss32___AIL_set_sample_address@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_sample_address@12",
+      "thunk_addr": "0x0062D2C0"
+    },
+    {
+      "ordinal": 1038,
+      "name": "mss32___AIL_set_sample_type@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_sample_type@12",
+      "thunk_addr": "0x0062D2C4"
+    },
+    {
+      "ordinal": 1039,
+      "name": "mss32___AIL_set_sample_loop_block@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_sample_loop_block@12",
+      "thunk_addr": "0x0062D2C8"
+    },
+    {
+      "ordinal": 1040,
+      "name": "mss32___AIL_set_sample_loop_count@8",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_sample_loop_count@8",
+      "thunk_addr": "0x0062D2CC"
+    },
+    {
+      "ordinal": 1041,
+      "name": "mss32___AIL_start_sample@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_start_sample@4",
+      "thunk_addr": "0x0062D2D0"
+    },
+    {
+      "ordinal": 1042,
+      "name": "mss32___AIL_start_3D_sample@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_start_3D_sample@4",
+      "thunk_addr": "0x0062D2D4"
+    },
+    {
+      "ordinal": 1043,
+      "name": "mss32___AIL_sample_status@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_sample_status@4",
+      "thunk_addr": "0x0062D2D8"
+    },
+    {
+      "ordinal": 1044,
+      "name": "mss32___AIL_3D_sample_status@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_3D_sample_status@4",
+      "thunk_addr": "0x0062D2DC"
+    },
+    {
+      "ordinal": 1045,
+      "name": "mss32___AIL_set_3D_sample_distances@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_3D_sample_distances@12",
+      "thunk_addr": "0x0062D2E0"
+    },
+    {
+      "ordinal": 1046,
+      "name": "mss32___AIL_set_3D_position@16",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_3D_position@16",
+      "thunk_addr": "0x0062D2E4"
+    },
+    {
+      "ordinal": 1047,
+      "name": "mss32___AIL_set_sample_playback_rate@8",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_sample_playback_rate@8",
+      "thunk_addr": "0x0062D2E8"
+    },
+    {
+      "ordinal": 1048,
+      "name": "mss32___AIL_set_3D_sample_playback_rate@8",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_3D_sample_playback_rate@8",
+      "thunk_addr": "0x0062D2EC"
+    },
+    {
+      "ordinal": 1049,
+      "name": "mss32___AIL_set_sample_volume_pan@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_sample_volume_pan@12",
+      "thunk_addr": "0x0062D2F0"
+    },
+    {
+      "ordinal": 1050,
+      "name": "mss32___AIL_set_3D_sample_volume@8",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_3D_sample_volume@8",
+      "thunk_addr": "0x0062D2F4"
+    },
+    {
+      "ordinal": 1051,
+      "name": "mss32___AIL_resume_sample@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_resume_sample@4",
+      "thunk_addr": "0x0062D2F8"
+    },
+    {
+      "ordinal": 1052,
+      "name": "mss32___AIL_resume_3D_sample@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_resume_3D_sample@4",
+      "thunk_addr": "0x0062D2FC"
+    },
+    {
+      "ordinal": 1053,
+      "name": "mss32___AIL_stop_sample@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_stop_sample@4",
+      "thunk_addr": "0x0062D300"
+    },
+    {
+      "ordinal": 1054,
+      "name": "mss32___AIL_stop_3D_sample@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_stop_3D_sample@4",
+      "thunk_addr": "0x0062D304"
+    },
+    {
+      "ordinal": 1055,
+      "name": "mss32___AIL_release_sample_handle@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_release_sample_handle@4",
+      "thunk_addr": "0x0062D308"
+    },
+    {
+      "ordinal": 1056,
+      "name": "mss32___AIL_release_3D_sample_handle@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_release_3D_sample_handle@4",
+      "thunk_addr": "0x0062D30C"
+    },
+    {
+      "ordinal": 1057,
+      "name": "mss32___AIL_close_3D_provider@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_close_3D_provider@4",
+      "thunk_addr": "0x0062D310"
+    },
+    {
+      "ordinal": 1058,
+      "name": "mss32___AIL_set_3D_rolloff_factor@8",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_3D_rolloff_factor@8",
+      "thunk_addr": "0x0062D314"
+    },
+    {
+      "ordinal": 1059,
+      "name": "mss32___AIL_open_3D_provider@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_open_3D_provider@4",
+      "thunk_addr": "0x0062D318"
+    },
+    {
+      "ordinal": 1060,
+      "name": "mss32___AIL_set_redist_directory@4",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_redist_directory@4",
+      "thunk_addr": "0x0062D31C"
+    },
+    {
+      "ordinal": 1061,
+      "name": "mss32___AIL_quick_startup@20",
+      "dll": "mss32.dll",
+      "func": "_AIL_quick_startup@20",
+      "thunk_addr": "0x0062D320"
+    },
+    {
+      "ordinal": 1062,
+      "name": "mss32___AIL_last_error@0",
+      "dll": "mss32.dll",
+      "func": "_AIL_last_error@0",
+      "thunk_addr": "0x0062D324"
+    },
+    {
+      "ordinal": 1063,
+      "name": "mss32___AIL_quick_handles@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_quick_handles@12",
+      "thunk_addr": "0x0062D328"
+    },
+    {
+      "ordinal": 1064,
+      "name": "mss32___AIL_set_file_callbacks@16",
+      "dll": "mss32.dll",
+      "func": "_AIL_set_file_callbacks@16",
+      "thunk_addr": "0x0062D32C"
+    },
+    {
+      "ordinal": 1065,
+      "name": "mss32___AIL_enumerate_3D_providers@12",
+      "dll": "mss32.dll",
+      "func": "_AIL_enumerate_3D_providers@12",
+      "thunk_addr": "0x0062D330"
+    },
+    {
+      "ordinal": 1196,
+      "name": "ole32__CoInitialize",
+      "dll": "ole32.dll",
+      "func": "CoInitialize",
+      "thunk_addr": "0x0062D338"
+    },
+    {
+      "ordinal": 1197,
+      "name": "ole32__CoCreateInstance",
+      "dll": "ole32.dll",
+      "func": "CoCreateInstance",
+      "thunk_addr": "0x0062D33C"
+    },
+    {
+      "ordinal": 1198,
+      "name": "ole32__CoUninitialize",
+      "dll": "ole32.dll",
+      "func": "CoUninitialize",
+      "thunk_addr": "0x0062D340"
+    },
+    {
+      "ordinal": 1199,
+      "name": "version__GetFileVersionInfoSizeA",
+      "dll": "version.dll",
+      "func": "GetFileVersionInfoSizeA",
+      "thunk_addr": "0x0097A90C"
+    },
+    {
+      "ordinal": 1200,
+      "name": "version__GetFileVersionInfoA",
+      "dll": "version.dll",
+      "func": "GetFileVersionInfoA",
+      "thunk_addr": "0x0097A910"
+    },
+    {
+      "ordinal": 1201,
+      "name": "version__VerQueryValueA",
+      "dll": "version.dll",
+      "func": "VerQueryValueA",
+      "thunk_addr": "0x0097A914"
+    }
+  ],
+  "tls": null
+}

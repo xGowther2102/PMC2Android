@@ -1,0 +1,44 @@
+{
+  "binary": "C:\\Users\\mamal\\WorkBuddy AI\\PORTS\\mc2-pc-android\\game_files\\mc2_pc.xbe",
+  "base_address": "0x00400000",
+  "entry_point": "0x0061958A",
+  "total_instructions": 769976,
+  "total_functions": 11216,
+  "functions_with_prologue": 389,
+  "functions_by_method": {
+    "call_target": 7231,
+    "seed_vtable_thunk": 2806,
+    "tail_jump_target": 249,
+    "prologue": 252,
+    "imm_ref_target": 254,
+    "jump_table_follower": 3,
+    "gap_prologue": 217,
+    "cc_boundary": 44,
+    "indirect_call_slot": 3,
+    "entry_point": 1,
+    "tail_jump_alias": 156
+  },
+  "functions_by_section": {
+    ".text": 11216
+  },
+  "total_xrefs": 135384,
+  "xrefs_by_type": {
+    "jump": 10376,
+    "data_read": 27326,
+    "cond_jump": 46053,
+    "data_imm": 13581,
+    "call": 37723,
+    "kernel_call": 325
+  },
+  "total_labels": 18331,
+  "total_strings": 6870,
+  "kernel_imports": 202,
+  "sections_analyzed": [
+    {
+      "name": ".text",
+      "va": "0x00401000",
+      "size": 2277376,
+      "functions": 11216
+    }
+  ]
+}

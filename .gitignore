@@ -1,0 +1,34 @@
+# Cachés y salidas de compilación
+mc2-pc-android/recomp/obj_arm64/
+mc2-recomp-android/.gradle/
+mc2-recomp-android/build/
+mc2-recomp-android/app/build/
+mc2-recomp-android/app/.cxx/
+mc2-recomp-android/local.properties
+mc2-recomp-android/keystore.properties
+
+# IDE y sistema
+*.iml
+.idea/
+.vscode/
+.DS_Store
+captures/
+__pycache__/
+*.pyc
+*.log
+
+# Binarios empaquetados y llaves (publicar APKs en GitHub Releases)
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Carpeta de datos del juego (no se sube al repo; se descarga por separado)
+assets_p.dat
+streams_pc.dat
+city/
+audio/
+video/
+texture_x/
+userdata/
+mods/

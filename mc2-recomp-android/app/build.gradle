@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Versión única del producto. Toda la UI y el runtime leen BuildConfig.VERSION_NAME.
+def appVersionCode = 10
+def appVersionName = '0.9.0'
+
+def keystorePropsFile = rootProject.file('keystore.properties')
+def keystoreProps = new Properties()
+if (keystorePropsFile.isFile()) {
+    keystorePropsFile.withInputStream { keystoreProps.load(it) }
+}
+def releaseStorePath = System.getenv('PMC2_STORE_FILE') ?: keystoreProps.getProperty('storeFile')
+def releaseStorePass = System.getenv('PMC2_STORE_PASSWORD') ?: keystoreProps.getProperty('storePassword')
+def releaseKeyAlias  = System.getenv('PMC2_KEY_ALIAS') ?: keystoreProps.getProperty('keyAlias')
+def releaseKeyPass   = System.getenv('PMC2_KEY_PASSWORD') ?: keystoreProps.getProperty('keyPassword')
+def releaseKeystore  = releaseStorePath ? rootProject.file(releaseStorePath) : null
+def hasReleaseSign   = releaseKeystore != null && releaseKeystore.isFile() && releaseStorePass && releaseKeyAlias && releaseKeyPass
+
+android {
+    namespace 'com.pmc2android.xgowther2102'
+    compileSdk 34
+
+    // Debe coincidir EXACTAMENTE con el NDK usado por mc2-pc-android/scripts/build_arm64.py
+    // para compilar libmc2pc.a. Mezclar NDK 27 (runtime) con NDK 28 (motor) es un error de ABI.
+    ndkVersion '28.2.13676358'
+
+    defaultConfig {
+        applicationId 'com.pmc2android.xgowther2102'
+        minSdk 26
+        targetSdk 34
+        versionCode appVersionCode
+        versionName appVersionName
+
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+
+        externalNativeBuild {
+            cmake {
+                // El runtime usa std::thread, std::mutex y std::unordered_map:
+                // desactivar excepciones convierte un bad_alloc en abort().
+                cppFlags '-std=c++17 -O2 -fexceptions -frtti'
+                arguments '-DANDROID_STL=c++_static'
+            }
+        }
+
+        buildConfigField 'String', 'VERSION_TAG', '"' + appVersionName + '"'
+    }
+
+    signingConfigs {
+        if (hasReleaseSign) {
+            release {
+                storeFile releaseKeystore
+                storePassword releaseStorePass
+                keyAlias releaseKeyAlias
+                keyPassword releaseKeyPass
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            jniDebuggable true
+        }
+        release {
+            debuggable false
+            jniDebuggable false
+            minifyEnabled false
+            if (hasReleaseSign) {
+                signingConfig signingConfigs.release
+            }
+            // Sin keystore.properties ni variables PMC2_*, assembleRelease genera
+            // app-release-unsigned.apk listo para firmar externamente con apksigner.
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.22.1'
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    lint {
+        // Evita crash de Android Lint UAST bajo JDK 25 en assembleRelease
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}

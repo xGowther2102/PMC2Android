@@ -1,0 +1,4 @@
+// Proyecto raíz. Sin dependencias externas: solo AGP + NDK/CMake del SDK.
+plugins {
+    id 'com.android.application' version '8.6.1' apply false
+}

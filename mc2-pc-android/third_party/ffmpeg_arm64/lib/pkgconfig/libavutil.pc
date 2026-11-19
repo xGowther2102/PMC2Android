@@ -1,0 +1,14 @@
+prefix=/c/Users/mamal/WORKBU~3/PORTS/mc2-pc-android/third_party/ffmpeg_arm64
+exec_prefix=${prefix}
+libdir=/c/Users/mamal/WORKBU~3/PORTS/mc2-pc-android/third_party/ffmpeg_arm64/lib
+includedir=/c/Users/mamal/WORKBU~3/PORTS/mc2-pc-android/third_party/ffmpeg_arm64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 59.39.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -latomic -landroid -lmediandk
+Libs.private: 
+Cflags: -I${includedir}
