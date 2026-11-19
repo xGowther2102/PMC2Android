@@ -32,8 +32,8 @@ Además de llevar el juego completo de PC a Android sin emulador, PMC2Android in
 * **Post-procesado y calidad moderna:** **Bloom selectivo** para luces/neones nocturnos, anti-aliasing **FXAA**, filtro de **nitidez/contraste nocturno**, **MSAA (`2x` / `4x`)**, filtrado anisotrópico (`hasta 16x`), niebla atmosférica y depth buffer de 24 bits.
 * **Medidor de rendimiento integrado:** barra HUD configurable con FPS reales, uso de CPU, tiempo de GPU (`ms`), RAM y temperatura.
 
-### Framework `mc2hook` integrado (adaptado nativamente a ARM64)
-Opciones activables desde *Configuración → MC2HOOK / Online*:
+### Framework `mc2hook` integrado (adaptación nativa ARM64 de [jtxredline/mc2hook](https://github.com/jtxredline/mc2hook))
+Opciones activables desde *Configuración → MC2HOOK / Online* (basado en el fork [mc2hook](https://github.com/jtxredline/mc2hook)):
 * **Soporte OpenSpy integrado:** opción lista para volver a conectar el modo multijugador tras el cierre de GameSpy.
 * **Reflejos de carrocería HD:** resolución ampliable (`128` hasta `1024 px`), actualización sin saltos de frames y shaders de carrocería.
 * **Mundo y tráfico:** mayor distancia de dibujado y tráfico (`1.0x` – `2.5x`), modelos de jugador en coches de la IA, sombras de vehículo ajustables (`50%` – `150%`) y expansión de límites del mapa.

@@ -32,8 +32,8 @@ In addition to running the full PC game natively on Android without an emulator,
 * **Modern Post-Processing & Quality:** selective **Bloom** for night lights and neon, **FXAA** anti-aliasing, **night contrast/sharpness** enhancement, **MSAA (`2x` / `4x`)**, anisotropic filtering (`up to 16x`), atmospheric fog, and 24-bit depth buffer.
 * **Built-in Performance Overlay:** customizable HUD bar displaying live FPS, CPU usage, GPU frame time (`ms`), RAM, and temperature.
 
-### Integrated `mc2hook` Framework (Native ARM64 Port)
-Configurable directly from *Settings → MC2HOOK / Online*:
+### Integrated `mc2hook` Framework (Native ARM64 Port of [jtxredline/mc2hook](https://github.com/jtxredline/mc2hook))
+Configurable directly from *Settings → MC2HOOK / Online* (based on the [mc2hook](https://github.com/jtxredline/mc2hook) fork):
 * **Built-in OpenSpy Support:** toggleable option to restore multiplayer connectivity after GameSpy shutdown.
 * **HD Vehicle Reflections:** scalable reflection resolution (`128` up to `1024 px`), no-skip reflection updates, and car body shaders.
 * **World & Traffic:** extended draw and traffic distance (`1.0x` – `2.5x`), player car models for AI racers, adjustable vehicle shadows (`50%` – `150%`), and expanded world map boundaries.
